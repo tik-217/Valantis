@@ -18,12 +18,9 @@ export const goodsSlice = createSlice({
     setApiRes(state, actions: PayloadAction<IItemsResponse[]>) {
       state.apiRes = actions.payload;
     },
-    setGoodsFilter(state, actions: PayloadAction<boolean>) {
-      state.goodsFilter = actions.payload;
-    },
   },
 });
 
-export const { setOffset, setApiRes, setGoodsFilter } = goodsSlice.actions;
+export const { setOffset, setApiRes } = goodsSlice.actions;
 
 export default goodsSlice.reducer;
